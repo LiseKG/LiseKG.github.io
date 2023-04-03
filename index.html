@@ -1,0 +1,322 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta charset="utf-8">
+	  <title>Lises tekst-prosjekt</title>
+	  <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        body{
+            background: black;
+            margin: 100;
+            padding: 100;
+            height: 1000px;
+        }
+        .ConT{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 100px;
+            width: 100%;   
+            margin-bottom: 300px;
+        }
+
+    
+        .ConT .still{
+            color: white;
+            font-size: 60px;
+            font-weight: 500;
+            line-height: 90px;
+        }
+
+        .ConT .changing{
+           margin-left: 15px;
+           line-height: 90px;
+           height: 90px;
+           overflow: hidden;
+        }
+
+        .changing li{
+            color: rgb(209, 208, 245);
+            list-style: none;
+            font-size: 61px;
+            font-weight: 500; 
+            top: 0;
+            position: relative;
+            animation: slide 5s steps(3) infinite;
+
+        }
+        @keyframes slide{
+            100%{
+                top: -270px;
+            }
+        }
+
+        .space{
+            color:white;
+            overflow: hidden;
+            line-height: 1px;
+        }
+
+        #Pomo, #Tictac, #GOFJ, #GOFP{
+            color:black;
+            width: 150px;
+        }
+
+        #PomR, #TicTacToe, #GOFPython, #GOFJava{
+            padding: 0 18px;
+            overflow: hidden;
+            background-color:rgb(197, 195, 248);
+            color: black;
+            width: 50%;
+
+        }
+        #PomR{
+            display: none;
+            
+        }
+        #TicTacToe{
+            display: none;
+        }
+        #GOFPython{
+            display: none;
+        }
+         #GOFJava{
+            display: none;
+        }
+
+        #fakta a{
+            color:rgb(197, 195, 248);;
+        }
+        #fakta{
+            color:white;
+            padding: 20px;
+        }
+        #fargerFest{
+            position: fixed;
+            top: 0px;
+            right: 10px;
+            color:white;
+        }
+        #HiddenText{
+            list-style-type: circle;
+            padding: 20px;
+            overflow: hidden;
+            height: 20px;
+        }
+        #HiddenText:hover{
+            animation: 
+                skriv 10s steps(20) forwards
+        }
+       
+        @keyframes skriv {
+            0% {color: black;
+                height:auto}  
+            5% {color: rgb(209, 208, 245);
+                height:auto}  
+            100% {color: white;
+                height:auto}  
+        }
+        
+	  </style>
+   </head>
+   <body>
+    <span style="color:white"><p> Made by LiseKG</p></span>
+    <div class="ConT"> 
+        <div class="still">  
+            I am a </div>
+            <ul class="changing">  
+                <li><span> Economist</span> </li>
+                <li><span>UX-designer</span> </li>
+                <li><span> Student</span> </li>
+            </ul>
+    </div>
+
+        <div class="space"><h3>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3></div>
+        <div id="HiddenText">
+            <h4> <span style="color:white" >Hi 👋 Give me a high five!👋 </span><br>
+                My name is Lise. I have not been programming for long, but enjoy web designing (from scratch). <br>
+                I currently code in<span style="color:rgb(197, 195, 248)" > CSS, HTML, Java, JaveScript, MySQL, PHP, Python and R.</span> <br>
+                I also know Figma, Photoshop and Lightroom. 
+        
+           <br> Enjoy my site!
+        </h4>
+
+
+        </div>
+        <div class="space"><h3>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3></div>
+       
+        
+        <div id="fakta">
+            
+        <h3> Previous projects:</h3>
+        <ul>
+            <li><a href="https://github.com/LiseKG/Java-Projects/blob/e932c6971d0994dc47b8530fd14748e4c35f8b11/CountDown.java"> Timer-prosject in Java </a> <br></li>
+            <li><a href="https://github.com/LiseKG/Python/blob/de2cd10abe2d34b28c888a511a97698176113b9e/main.py"> Game Of Life in Python </a></li>
+            <li><a href="https://github.com/LiseKG/Java-Projects/blob/e932c6971d0994dc47b8530fd14748e4c35f8b11/GameofLifeFrame.java"> Game of Life in Java </a> </li>
+            <li><a href="https://github.com/LiseKG/Java-Projects/blob/6ed5cf82d05e95edba1f0e9a8bcd2e00ccbe13a7/TrePaaRad.java"> Tre Paa rad / Tic Tac Toe in Java </a> </li>
+
+        </ul>
+
+        <h3> More information about the projects: </h3>
+    </div>
+        
+        <button id="Pomo" type="button" > Pomodoro-timer (Java) Project </button> 
+        <button id="GOFJ" type="button"> Game of Life (Java) Project</button>   
+        <button id="GOFP" type="button"> Game of Life (Python) Project</button> 
+        <button id="Tictac" type="button" > Tic Tac Toe (Java) Project</button> 
+
+        <div id="PomR"> <p> The project was a side-project. The goal was to make a Pomodoro-timer that I could use while studying. I made it 2 months into learning Java.<br> (1 file: CountDown)<a href="https://github.com/LiseKG/Java-Projects/blob/e932c6971d0994dc47b8530fd14748e4c35f8b11/CountDown.java">Java CountDown project
+        </a></p></div>     
+        <div id="GOFJava">
+            <p>This is a game I made. Game of Life is a game about different cells that live and die based on their neighbors. <br>(4 files: Celle, Verden, Rutenett,GameofLifeFrame)
+            <a href="https://github.com/LiseKG/Java-Projects/blob/e932c6971d0994dc47b8530fd14748e4c35f8b11/GameofLifeFrame.java">Java Game Of Life </a> </p>
+        </div>
+              
+        <div id="GOFPython">
+            <p>This is a game I made as a part of a mandatory assignment. Game of Life but in Python. <br>(3 files: Celle,main,spillebrett)
+            <a href="https://github.com/LiseKG/Python/blob/de2cd10abe2d34b28c888a511a97698176113b9e/main.py">Java Game Of Life </a> </p>
+        </div>
+
+        <div id="TicTacToe"> <p> One of my first games in Java. <br>(1 file: TrePaaRad.java)
+            <a href="https://github.com/LiseKG/Java-Projects/blob/6ed5cf82d05e95edba1f0e9a8bcd2e00ccbe13a7/TrePaaRad.java"> TrePaaRad.java </a> </p>
+        </div>
+    
+    
+
+
+    <div id="fargerFest">
+        <h2> Dont like dark colors?</h2>
+
+        <table>
+    		  <tr>
+    			<td>Rød</td>
+    			<td><input type="range" id="red"  min="0" max="255" value="0"></td>
+    			<td id="redValue">255</td>
+    		  </tr>
+    		  <tr>
+    			<td>Grønn</td>
+    			<td><input type="range" id="green" min="0" max="255" value="0"></td>
+    			<td id="greenValue">255</td>
+    		  </tr>
+    		  <tr>
+    			<td>Blå</td>
+    			<td><input type="range" id="blue" min="0" max="255" value="0"></td>
+    			<td id="blueValue">255</td>
+    		  </tr>
+    	  </table>
+    	  <p>
+    	  Colorcode: <span id="fargekode">#000000</span>
+    	  </p>
+      </div>
+
+
+    <script>
+        // buttons
+        var TicB = document.getElementById("Tictac");
+        var PomoB = document.getElementById("Pomo");
+        var GOFJB = document.getElementById("GOFJ");
+        var GOFPB = document.getElementById("GOFP");
+
+        //text
+        var GOFPython = document.querySelector("#GOFPython");
+        var Pom = document.querySelector("#PomR");
+        var GOFJava = document.querySelector("#GOFJava");       
+        var TicTacToe = document.querySelector("#TicTacToe");
+        
+        TicB.addEventListener("click", function() {
+            if (TicTacToe.style.display === "block") {
+                TicTacToe.style.display="none";
+                closeTheRest();
+            }else{
+                closeTheRest(); 
+                TicTacToe.style.display = "block";     
+            }
+        });
+      
+
+        PomoB.addEventListener("click", function() {
+            if (Pom.style.display === "block") {
+                Pom.style.display = "none";
+            }else{
+                closeTheRest();
+                Pom.style.display = "block";       
+            }
+        });
+        GOFJB.addEventListener("click", function() {
+            if (GOFJava.style.display === "block") {
+                GOFJava.style.display = "none";
+            } else {
+                closeTheRest();
+                GOFJava.style.display = "block";      
+            }
+        });
+
+        GOFPB.addEventListener("click", function() {
+            if (GOFPython.style.display === "block") {
+                GOFPython.style.display = "none";
+            } else {
+                closeTheRest();
+                GOFPython.style.display = "block";       
+            }
+        });
+
+        function closeTheRest(){
+            TicTacToe.style.display = "none";
+            Pom.style.display = "none";
+            GOFJava.style.display = "none";
+            GOFPython.style.display = "none";
+        }
+
+        var redEl = document.querySelector("#red");
+        var greenEl = document.querySelector("#green");
+        var blueEl = document.querySelector("#blue");
+        var redValueEl = document.querySelector("#redValue");
+        var greenValueEl = document.querySelector("#greenValue");
+        var blueValueEl = document.querySelector("#blueValue");
+        var fargekodeEl = document.querySelector("#fargekode");
+        var faktatekst = document.querySelector("#fakta");
+
+        redEl.addEventListener("mousemove", settFarge);
+        greenEl.addEventListener("mousemove", settFarge);
+        blueEl.addEventListener("mousemove", settFarge);
+
+        function settFarge(){
+            var r = Number(redEl.value); //Dette skal være ett tall
+            var g = Number(greenEl.value); //Dette skal være ett tall;
+            var b = Number(blueEl.value); //Dette skal være ett tall;
+
+            //Skriver ut verdiene på glideren i HTML-tabellen
+            redValueEl.innerHTML = r;
+            greenValueEl.innerHTML = g;
+            blueValueEl.innerHTML = b;
+
+            //Legger rgb fagen som ny bakgrunnsfarge rgb(r,g,b)
+            document.body.style.backgroundColor = "rgb("+r+","+g+","+b+")";
+            if(g +r + b < 100){
+            faktatekst.style.color = "rgb(255,255,255)";
+            }else if(g < 60 & r < 100 || r < 100 & g < 100 || g < 60 & b < 60){
+            faktatekst.style.color = "rgb(255,255,255)";
+             }else{
+            faktatekst.style.color = "rgb(0,0,0)";
+            }
+            //Konverterer til en streng i 16-tallsystemet
+            var rH = r.toString(16);
+            var gH = g.toString(16);
+            var bH = b.toString(16);
+
+
+            var hexfarge = "#"+rH+gH+bH;
+
+            fargekodeEl.innerHTML = hexfarge; 
+         }
+             </script>
+
+
+
+   </body>
+</html>
