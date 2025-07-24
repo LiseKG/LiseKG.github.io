@@ -1,0 +1,302 @@
+:root{
+    --gray: #666270;
+    --red: #FEE8E8;
+    --font: Georgia, serif;
+    --btnPrimary: #FCF6F8;
+}
+
+body{
+    background-color: #FEFEFE;
+    font-family:var(--font);
+    min-width: 800px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 11rem; 
+    padding-left: 105px;
+    padding-right: 2rem;
+    position: relative;  
+}
+
+.aboutText, .endText{
+    color:#000000;
+    font-family:var(--font);
+    font-size: 26px;
+    line-height: 150%;
+    min-width: 750px;
+}
+
+.endText{
+    border-top: 1px solid black;
+    margin-top: 2em;
+    font-size: 18px;
+}
+
+#mainIntro{
+    font-size: 60px;
+    color: black;
+    z-index: 1;
+}
+
+.mainPhrase{
+    color: var(--gray);
+    font-size: 34px;
+    z-index: 1;
+}
+
+#aboutMe{
+    margin-top: 10px;
+    background-color:var(--btnPrimary);
+    width: 130px;
+    height: 50px;
+    font-size: 20px;
+    border-width: 1px;
+    border-color: var(--gray);
+    font-family: var(--font);
+}
+
+#aboutMe:hover{
+    background-color: var(--red);
+}
+
+.blurryCircle{
+    width: 140px;
+    height: 130px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -9;
+    filter:blur(40px)
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+nav{
+    padding-bottom: 20px;
+}
+
+.mainPageButtons{
+    position: absolute;
+    top: 12rem;
+    right: 2em;
+    display: flex;
+    flex-direction: column; 
+}
+
+.projects, .telecom, .fintech{
+    width: 240px;
+    height: 50px;
+    /* padding: 2px; */
+    margin: 5px;
+    font-size: 16px;
+    background-color: #F0F2F6; 
+    border-color: #3B3B3B;
+    border-width: 1px;
+    z-index: 1; 
+}
+
+.mainPageButtons a{
+    text-decoration: none;
+    color: black;
+}
+
+.projects:hover{
+    background-color: var(--red); 
+}
+
+.telecom:hover{
+    background-color: #E8F2FE;
+}
+
+.fintech:hover{
+    background-color: #EFE8FE;
+}
+
+#ContainerProjects{
+    margin-top: 19rem;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;   
+}
+
+#cardVear, #cardIsh, #cardDHIS, .card{
+    position: relative;
+    width: 100%;
+    min-height: 502px;
+    min-width: 45rem;
+    font-family: var(--font);
+    padding-left: 2rem; 
+    justify-content: center;
+    
+}
+
+#cardVear{
+    background-color: #FDF8F5;
+}
+
+#cardIsh{
+    background-color: #F4F5FD;
+}
+
+#cardDHIS{
+    background-color: #EDEFFA;
+}
+
+.cardTitle{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.MainCardContent{
+    position:relative;
+    padding-left: clamp(4rem,5vw,4rem);
+    padding-right: clamp(4rem,5vw,4rem); 
+    padding-bottom: 1rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(3rem, 6rem, 8rem);
+}
+
+
+#InfoVear, #InfoIsh, #InfoDHIS{
+    display: none;
+    position: absolute;
+    top: 2em;
+    left: 5rem;  
+    border-radius: 5%;
+    color: black;
+    flex-direction: column;
+    align-items:baseline;
+    justify-content: center; 
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+     pointer-events: none;  
+     padding: 2em;
+     margin-right: clamp(4rem,5vw,4rem); 
+     z-index: 1;
+  } 
+
+.InfoText{
+    font-family:var(--font);
+    font-size: 24px;
+    line-height: 150%;
+    padding-top: 1em;
+  }
+  
+#cardVear .cardTitle:hover ~ #InfoVear {
+    opacity: 1;          
+    pointer-events: auto;   
+    display: flex;
+    background-color: #FFF3EC;
+  }
+
+#cardIsh .cardTitle:hover ~ #InfoIsh{
+    pointer-events: auto;   
+    display: flex;
+    background-color:#FDFEFF ;
+  }
+
+.textInCard{
+    font-family:var(--font);
+    font-size: 34px;
+    line-height: 200%;
+    padding-top: 1em;
+  }
+
+#cardDHIS .cardTitle:hover ~ #InfoDHIS{
+    pointer-events: auto;  
+    display: flex;
+    background-color:#E8ECFF;
+  }
+
+.secondaryText{
+    color: #666270;
+    font-family:var(--font);
+    font-size: 25px;
+    line-height: 200%;
+    padding-left: 5px;
+  }
+
+.primaryText{
+    color: black;
+    font-family:var(--font);
+    font-size: 36px;
+    line-height: 200%;
+  }
+
+#MoreProjects, #MoreAboutMe{
+    margin-top: 1rem;
+    padding: 10px;
+    background-color: var(--btnPrimary);
+    font-size: 20px;
+    border-width: 1px;
+    border-color: var(--gray);
+    font-family: var(--font);
+  }
+
+a{
+    text-decoration: none;
+    color: black;
+  }
+
+#MoreProjects:hover, #MoreAboutMe:hover{
+    background-color: var(--red);
+}
+
+.mainAbout{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 11rem; 
+    padding-left: 115px;
+    padding-right: 2rem;
+    position: relative;
+    margin-right: 20px;
+}
+
+.languageEl_P, .languageEl_D,.languageEl_new{
+    width:auto;
+    font-family: var(--font);
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    white-space: nowrap;
+}
+
+.languageEl_P{
+    background-color: #FFF9F3;
+}
+
+.languageEl_D{
+    background-color: #FEF5F3;
+}
+
+.languageEl_new{
+    background-color: #F6F7FB;
+}
+
+.languagelist{
+    font-family: var(--font);
+    padding-top: 2em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 800px; 
+    gap:20px;
+}
+
+.languageEl_D:hover,.languageEl_new:hover, .languageEl_P:hover{
+    background-color: var(--red);
+}
