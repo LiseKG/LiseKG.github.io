@@ -30,9 +30,10 @@
        
 
          <div class="mainPageButtons"> 
-            <button class="projects"> <a href=""> Projects</a>  </button>
-            <button class="telecom"> <a href="">Telecom experience </a></button>
-            <button class="fintech"> <a href="">Fin-tech experience </a></button>
+            <button class="projects" onclick="document.getElementById('ContainerProjects').scrollIntoView({behavior: 'smooth'});">Projects </button>
+            <button class="telecom" onclick="document.getElementById('workExp').scrollIntoView({behavior: 'smooth'});">Telecom experience</button>
+            <button class="fintech" onclick="document.getElementById('workExp').scrollIntoView({behavior: 'smooth'});">Fin-tech experience </button>
+
 
             <div class="blurryCircle" style="background-color: #fbe8e8; top:5em; left:9em;"></div>
         </div> 
@@ -114,7 +115,7 @@
             </div>
         </div>
 
-        <div class ="workExp"> 
+        <div id="workExp"> 
             <div class="primaryText"> Work experience:</div>
             <div class="secondaryText"> Telecom: Vue & Figma </div>
             <div class="secondaryText"> Fintech: Figma & Facebook/Google ads </div>
