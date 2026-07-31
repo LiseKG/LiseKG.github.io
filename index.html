@@ -19,26 +19,28 @@
     <div class="blurryCircle"style="top:8em; left:5em;   background-color: #ECD8F8;"></div>
     <div class="blurryCircle"style="background-color: #ECD8F8;top:7em; left:3em"></div>
    
-        <div id="mainIntro"> Hello, I'm Lise</div>
-        <div class="mainPhrase"> A developer who can design </div>
-        <button id="aboutMe"><a href="/about.html"> About me</a> </button>
+        <div class="heroRow">
+            <div class="heroIntro">
+                <div id="mainIntro"> Hello, I'm Lise</div>
+                <div class="mainPhrase"> A developer who can design </div>
+                <button id="aboutMe"><a href="/about.html"> About me</a> </button>
+            </div>
+
+            <div class="mainPageButtons">
+                <button class="projects" onclick="document.getElementById('ContainerProjects').scrollIntoView({behavior: 'smooth'});">Projects </button>
+                <button class="telecom" onclick="document.getElementById('workExp').scrollIntoView({behavior: 'smooth'});">Telecom experience</button>
+                <button class="fintech" onclick="document.getElementById('workExp').scrollIntoView({behavior: 'smooth'});">Fin-tech experience </button>
+
+                <div class="blurryCircle" style="background-color: #fbe8e8; top:95%; left:80%; transform: translate(-50%, -50%);"></div>
+            </div>
+        </div>
 
         <div class="blurryCircle"style="background-color: #D8E6F8;top:14em; left:32em;"></div>
-        <div class="blurryCircle"style="background-color: #D8E6F8;top:14em; left:28em;"></div> 
+        <div class="blurryCircle"style="background-color: #D8E6F8;top:14em; left:28em;"></div>
         <div class="blurryCircle"style="background-color: #D8E6F8;top:18em; left:26em;"></div>
-        
-       
-
-         <div class="mainPageButtons"> 
-            <button class="projects" onclick="document.getElementById('ContainerProjects').scrollIntoView({behavior: 'smooth'});">Projects </button>
-            <button class="telecom" onclick="document.getElementById('workExp').scrollIntoView({behavior: 'smooth'});">Telecom experience</button>
-            <button class="fintech" onclick="document.getElementById('workExp').scrollIntoView({behavior: 'smooth'});">Fin-tech experience </button>
-
-
-            <div class="blurryCircle" style="background-color: #fbe8e8; top:5em; left:9em;"></div>
-        </div> 
 
         <div id="ContainerProjects"> 
+            <div class="primaryText"> Projects:</div>
             <div id="cardVear"> 
                 <div class="cardTitle">
                     <img src="Alertcircle.svg" alt="Alert Circle">

@@ -8,17 +8,17 @@
 body{
     background-color: #FEFEFE;
     font-family:var(--font);
-    min-width: 800px;
+    overflow-x: hidden;
 }
 
 .main{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-top: 11rem; 
+    padding-top: 11rem;
     padding-left: 105px;
     padding-right: 2rem;
-    position: relative;  
+    position: relative;
 }
 
 .aboutText, .endText{
@@ -26,7 +26,7 @@ body{
     font-family:var(--font);
     font-size: 26px;
     line-height: 150%;
-    min-width: 750px;
+    max-width: 750px;
 }
 
 .endText{
@@ -81,12 +81,26 @@ nav{
     padding-bottom: 20px;
 }
 
-.mainPageButtons{
-    position: absolute;
-    top: 12rem;
-    right: 2em;
+.heroRow{
     display: flex;
-    flex-direction: column; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.heroIntro{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.mainPageButtons{
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .projects, .telecom, .fintech{
@@ -119,22 +133,21 @@ nav{
 }
 
 #ContainerProjects{
-    margin-top: 19rem;
+    margin-top: 4rem;
     margin-right: 3rem;
     display: flex;
     flex-direction: column;
-    gap: 20px;   
+    gap: 20px;
 }
 
 #cardVear, #cardIsh, #cardDHIS, .card{
     position: relative;
     width: 100%;
     min-height: 502px;
-    min-width: 45rem;
     font-family: var(--font);
-    padding-left: 2rem; 
+    padding-left: 2rem;
     justify-content: center;
-    
+
 }
 
 #cardVear{
@@ -157,13 +170,14 @@ nav{
 
 .MainCardContent{
     position:relative;
-    padding-left: clamp(4rem,5vw,4rem);
-    padding-right: clamp(4rem,5vw,4rem); 
-    padding-bottom: 1rem; 
+    padding-left: clamp(1.5rem, 5vw, 4rem);
+    padding-right: clamp(1.5rem, 5vw, 4rem);
+    padding-bottom: 1rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: clamp(3rem, 6rem, 8rem);
+    gap: clamp(1.5rem, 6vw, 8rem);
 }
 
 
@@ -293,7 +307,6 @@ a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    min-width: 800px; 
     gap:20px;
 }
 
