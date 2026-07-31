@@ -41,15 +41,15 @@
 
         <div id="ContainerProjects"> 
             <div class="primaryText"> Projects:</div>
-            <div id="cardVear"> 
-                <div class="cardTitle">
+            <div id="cardVear">
+                <div class="cardTitle" onclick="event.stopPropagation(); document.getElementById('cardVear').classList.toggle('is-open');">
                     <img src="Alertcircle.svg" alt="Alert Circle">
-                   
-                <h1> VærTaktisk</h1> 
+
+                <h1> VærTaktisk</h1>
                 </div>
                 <div class="MainCardContent">
-                    <img src="VearTaktiskLogo.png" alt="Logo til Værtaktisk">
-                    <img src="PhoneVaer.png" alt="Bilde av Værtaktisk appen">
+                    <img src="VearTaktiskLogo.png" alt="Logo til Værtaktisk" style="max-height: 300px;">
+                    <img src="PhoneVaer.png" alt="Bilde av Værtaktisk appen" style="max-height: 380px;">
                     </div>
             
                 <div id="InfoVear">
@@ -63,22 +63,22 @@
                             <br> Scrummaster + Fullstack + Co-designer
                         </div>
                     </div>
-                    <img src="VearTaktiskLogo.png" alt="Logo til Værtaktisk" style="margin-left:1em; max-height: 300px;">
-                </div>
+                    <!-- <img src="VearTaktiskLogo.png" alt="Logo til Værtaktisk" style="margin-left:1em; max-height: 300px;">-->
+                </div> 
            
                 </div>
                 
             </div>
-            <div id="cardIsh"> 
-                <div class="cardTitle">
+            <div id="cardIsh">
+                <div class="cardTitle" onclick="event.stopPropagation(); document.getElementById('cardIsh').classList.toggle('is-open');">
                     <img src="Alertcircle.svg" alt="Alert Circle">
                     <div id="expIsh"></div>
-                <h1> Ishihara Project</h1> 
+                <h1> Ishihara Project</h1>
                 </div>
 
                 <div class="MainCardContent">
-                <img src="IshiharaPhone.png" alt="Bilde av appen">
-                <div class="textInCard"> Python project <br>
+                <img src="IshiharaPhone.png" alt="Bilde av appen" style="max-height: 380px;">
+                <div class="textInCard"> Python project <br> 
                     MVP - To be continued</div>
             </div>
 
@@ -88,14 +88,14 @@
                 <div class="InfoText"> Project still in progress</div>
             </div>
             </div>
-            <div id="cardDHIS"> 
-                <div class="cardTitle">
+            <div id="cardDHIS">
+                <div class="cardTitle" onclick="event.stopPropagation(); document.getElementById('cardDHIS').classList.toggle('is-open');">
                     <img src="Alertcircle.svg" alt="Alert Circle">
                     <div id="expDHIS"></div>
-                <h1> DHIS2 - School Inspection Tool</h1> 
+                <h1> DHIS2 - School Inspection Tool</h1>
                 </div>
 
-                <div class="MainCardContent"style="padding-top:6em; gap: 4rem;">
+                <div class="MainCardContent">
                 <img src="dhis2Logo.svg" alt="Bilde av logoen til DHIS2">
                 <img src="reactLogo.svg" alt="react logo">
             </div>
@@ -107,11 +107,11 @@
                         <div class="InfoText"> React application with DHIS2 API</div>
                         <div class="InfoText"> Languages/tools: Figma, React & Scrumban </div>
                         <div class="InfoText"> Experience:
-                            <br> Frontend and backend development
+                            <br> Fullstack development
                             <br> Features: Offline storage and local storage
                         </div>
                     </div>
-                    <img src="dhis2Logo.svg" alt="Logo til dhis2" style="margin-left:1em; max-height: 200px;">
+                    <!-- <img src="dhis2Logo.svg" alt="Logo til dhis2" style="margin-left:1em; max-height: 200px;"> -->
                 </div>
             </div>
             </div>
@@ -126,5 +126,11 @@
             <!-- <button id="MoreProjects"> More projects </button> -->
         </div>
     </div>
+    <script>
+        document.addEventListener('click', function(){
+            document.querySelectorAll('#cardVear.is-open, #cardIsh.is-open, #cardDHIS.is-open')
+                .forEach(function(card){ card.classList.remove('is-open'); });
+        });
+    </script>
 </body>
 </html>

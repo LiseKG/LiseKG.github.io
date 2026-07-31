@@ -53,6 +53,7 @@ body{
     width: 130px;
     height: 50px;
     font-size: 20px;
+    color: black;
     border-width: 1px;
     border-color: var(--gray);
     font-family: var(--font);
@@ -60,6 +61,11 @@ body{
 
 #aboutMe:hover{
     background-color: var(--red);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
 }
 
 .blurryCircle{
@@ -109,10 +115,11 @@ nav{
     /* padding: 2px; */
     margin: 5px;
     font-size: 16px;
-    background-color: #F0F2F6; 
+    color: black;
+    background-color: #F0F2F6;
     border-color: #3B3B3B;
     border-width: 1px;
-    z-index: 1; 
+    z-index: 1;
 }
 
 .mainPageButtons a{
@@ -166,6 +173,7 @@ nav{
     display: flex;
     flex-direction: row;
     gap: 1em;
+    cursor: pointer;
 }
 
 .MainCardContent{
@@ -206,15 +214,17 @@ nav{
     padding-top: 1em;
   }
   
-#cardVear .cardTitle:hover ~ #InfoVear {
-    opacity: 1;          
-    pointer-events: auto;   
+#cardVear .cardTitle:hover ~ #InfoVear,
+#cardVear.is-open #InfoVear {
+    opacity: 1;
+    pointer-events: auto;
     display: flex;
     background-color: #FFF3EC;
   }
 
-#cardIsh .cardTitle:hover ~ #InfoIsh{
-    pointer-events: auto;   
+#cardIsh .cardTitle:hover ~ #InfoIsh,
+#cardIsh.is-open #InfoIsh{
+    pointer-events: auto;
     display: flex;
     background-color:#FDFEFF ;
   }
@@ -226,8 +236,9 @@ nav{
     padding-top: 1em;
   }
 
-#cardDHIS .cardTitle:hover ~ #InfoDHIS{
-    pointer-events: auto;  
+#cardDHIS .cardTitle:hover ~ #InfoDHIS,
+#cardDHIS.is-open #InfoDHIS{
+    pointer-events: auto;
     display: flex;
     background-color:#E8ECFF;
   }
@@ -241,6 +252,7 @@ nav{
   }
 
 .primaryText{
+    margin-top: 6rem;
     color: black;
     font-family:var(--font);
     font-size: 36px;
@@ -252,6 +264,7 @@ nav{
     padding: 10px;
     background-color: var(--btnPrimary);
     font-size: 20px;
+    color: black;
     border-width: 1px;
     border-color: var(--gray);
     font-family: var(--font);
@@ -312,4 +325,65 @@ a{
 
 .languageEl_D:hover,.languageEl_new:hover, .languageEl_P:hover{
     background-color: var(--red);
+}
+
+@media (max-width: 700px){
+    .main, .mainAbout{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 7rem;
+    }
+
+    #mainIntro{
+        font-size: 40px;
+    }
+
+    .mainPhrase{
+        font-size: 24px;
+    }
+
+    .aboutText, .endText{
+        font-size: 20px;
+    }
+
+    .heroRow{
+        flex-direction: column;
+    }
+
+    .mainPageButtons{
+        align-self: flex-start;
+    }
+
+    .projects, .telecom, .fintech{
+        width: 100%;
+        max-width: 280px;
+    }
+
+    #cardVear, #cardIsh, #cardDHIS, .card{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        min-height: unset;
+    }
+
+    #InfoVear, #InfoIsh, #InfoDHIS{
+        left: 1rem;
+        right: 1rem;
+        padding: 1rem;
+    }
+
+    .textInCard{
+        font-size: 22px;
+    }
+
+    .InfoText{
+        font-size: 18px;
+    }
+
+    .primaryText{
+        font-size: 28px;
+    }
+
+    .secondaryText{
+        font-size: 20px;
+    }
 }
